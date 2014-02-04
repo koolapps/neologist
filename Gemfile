@@ -12,3 +12,6 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+
+gem 'sinatra', '>= 1.3.0', :require => nil
+gem 'pry-rails'

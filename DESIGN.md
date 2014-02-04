@@ -83,7 +83,7 @@ Potential workflows
 
 - Embed snippets
 
-  Special syntax for auto-gisting certain code blocks within posts as their own gists, setting language, and compiling them back into posts with 'View on gist.com' link, monitoring for updates, syntax highlighting?
+  Special syntax for auto-gisting certain code blocks within posts as their own gists, setting language, and compiling them back into posts with 'View on gist.com' link, monitoring for updates, syntax highlighting? OR could be implemented with multiple files per gist.
 
 Considerations
 --------------

@@ -1,0 +1,49 @@
+<%= form_for(@gist) do |f| %>
+  <% if @gist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gist.errors.count, "error") %> prohibited this gist from being saved:</h2>
+
+      <ul>
+      <% @gist.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br>
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :author_id %><br>
+    <%= f.text_field :author_id %>
+  </div>
+  <div class="field">
+    <%= f.label :private %><br>
+    <%= f.check_box :private %>
+  </div>
+  <div class="field">
+    <%= f.label :publication_state %><br>
+    <%= f.number_field :publication_state %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_area :content %>
+  </div>
+  <div class="field">
+    <%= f.label :compiled_at %><br>
+    <%= f.datetime_select :compiled_at %>
+  </div>
+  <div class="field">
+    <%= f.label :stale %><br>
+    <%= f.check_box :stale %>
+  </div>
+  <div class="field">
+    <%= f.label :fetched_at %><br>
+    <%= f.check_box :fetched_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

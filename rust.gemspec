@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = %w[Christopher\ Keele]
   s.email       = %w[dev@chriskeele.com]
   s.homepage    = "https://www.github.com/rawsugar/rust"
-  s.summary     = "Inject static markdown content from gists into your Rails app"
+  s.summary     = "A Gist-powered Rails CMS engine."
   s.description = "TODO: Description of Rust."
   s.license     = "MIT"
 
@@ -21,8 +21,10 @@ Gem::Specification.new do |s|
   s.add_dependency "haml-rails"
   s.add_dependency "sass-rails"
   s.add_dependency "foundation-rails"
-  s.add_dependency "github"
+  s.add_dependency "github_api"
   s.add_dependency "redcarpet"
+  s.add_dependency "sidekiq"
+  s.add_dependency "state_machine"
 
   s.add_development_dependency "sqlite3"
 end

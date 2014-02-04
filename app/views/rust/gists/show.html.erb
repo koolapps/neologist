@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @gist.id %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @gist.author_id %>
+</p>
+
+<p>
+  <strong>Private:</strong>
+  <%= @gist.private %>
+</p>
+
+<p>
+  <strong>Publication state:</strong>
+  <%= @gist.publication_state %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @gist.content %>
+</p>
+
+<p>
+  <strong>Compiled at:</strong>
+  <%= @gist.compiled_at %>
+</p>
+
+<p>
+  <strong>Stale:</strong>
+  <%= @gist.stale %>
+</p>
+
+<p>
+  <strong>Fetched At:</strong>
+  <%= @gist.fetched_at %>
+</p>
+
+<%= link_to 'Edit', edit_gist_path(@gist) %> |
+<%= link_to 'Back', gists_path %>
