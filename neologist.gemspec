@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "rust/version"
+require "neologist/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "Rust"
-  s.version     = Rust::VERSION
+  s.name        = "Neologist"
+  s.version     = Neologist::VERSION
   s.authors     = %w[Christopher\ Keele]
   s.email       = %w[dev@chriskeele.com]
-  s.homepage    = "https://www.github.com/rawsugar/rust"
+  s.homepage    = "https://www.github.com/rawsugar/neologist"
   s.summary     = "A Gist-powered Rails CMS engine."
-  s.description = "TODO: Description of Rust."
+  s.description = "TODO: Description of Neologist."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]

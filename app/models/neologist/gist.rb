@@ -1,4 +1,4 @@
-module Rust
+module Neologist
   class Gist < ApplicationModel
 
     belongs_to :author

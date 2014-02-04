@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module Rust
+module Neologist
   class GistsControllerTest < ActionController::TestCase
     setup do
       @gist = gists(:one)

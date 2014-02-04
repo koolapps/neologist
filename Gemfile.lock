@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    Rust (0.0.1)
+    Neologist (0.0.1)
       foundation-rails
       github_api
       haml-rails
@@ -168,7 +168,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  Rust!
+  Neologist!
   pry-rails
   sinatra (>= 1.3.0)
   sqlite3

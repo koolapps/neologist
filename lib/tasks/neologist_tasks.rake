@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :rust do
+# task :neologist do
 #   # Task goes here
 # end

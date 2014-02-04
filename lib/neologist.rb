@@ -1,6 +1,6 @@
-require "rust/engine"
+require "neologist/engine"
 require "github_api"
 require "sidekiq"
 
-module Rust
+module Neologist
 end

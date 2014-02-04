@@ -1,4 +1,4 @@
-module Rust
+module Neologist
   class GistFetcher
     include Sidekiq::Worker
     def perform(gist_id)

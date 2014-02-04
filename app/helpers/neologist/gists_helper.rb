@@ -1,4 +1,4 @@
-module Rust
+module Neologist
   module GistsHelper
   end
 end

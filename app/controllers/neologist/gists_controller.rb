@@ -1,6 +1,6 @@
-require_dependency "rust/application_controller"
+require_dependency "neologist/application_controller"
 
-module Rust
+module Neologist
   class GistsController < ApplicationController
     before_action :set_gist, only: [:show, :edit, :update, :destroy]
 
@@ -54,7 +54,7 @@ module Rust
         @gist = Gist.find(params[:id])
       end
 
-      # Only allow a trusted parameter "white list" through.
+      # Only allow a tneologisted parameter "white list" through.
       def gist_params
         params.require(:gist).permit(:id, :author_id, :private, :publication_state, :content, :compiled_at, :stale)
       end

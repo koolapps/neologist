@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140202194930) do
 
-  create_table "rust_gists", id: false, force: true do |t|
+  create_table "neologist_gists", id: false, force: true do |t|
     t.string   "id",                               null: false
     t.string   "author_id",                        null: false
     t.boolean  "public",            default: true, null: false
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20140202194930) do
     t.datetime "updated_at"
   end
 
-  add_index "rust_gists", ["author_id"], name: "index_rust_gists_on_author_id", unique: true
-  add_index "rust_gists", ["id"], name: "index_rust_gists_on_id", unique: true
+  add_index "neologist_gists", ["author_id"], name: "index_neologist_gists_on_author_id", unique: true
+  add_index "neologist_gists", ["id"], name: "index_neologist_gists_on_id", unique: true
 
 end

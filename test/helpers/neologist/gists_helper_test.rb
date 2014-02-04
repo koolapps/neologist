@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module Rust
+module Neologist
   class GistsHelperTest < ActionView::TestCase
   end
 end

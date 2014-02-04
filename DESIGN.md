@@ -1,7 +1,7 @@
-Rust
+Neologist
 ====
 
-The idea behind `Rust` (name changeable) is to add static-site-generator-like features to Rails, harnessing Gists as the core publishing mechanism. The end goal is to provide a framework around rendering the bodies of Gists as partials, with common drafting workflows enabled through rake and capistrano deploy strategies, a robust caching mechanism, live previews in development, and content editing + comment threads enabled through Gists.
+The idea behind `Neologist` (name changeable) is to add static-site-generator-like features to Rails, harnessing Gists as the core publishing mechanism. The end goal is to provide a framework around rendering the bodies of Gists as partials, with common drafting workflows enabled through rake and capistrano deploy strategies, a robust caching mechanism, live previews in development, and content editing + comment threads enabled through Gists.
 
 Potential libraries
 -------------------
