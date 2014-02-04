@@ -11,14 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140202194930) do
+ActiveRecord::Schema.define(version: 20140204012143) do
+
+  create_table "neologist_documents", id: false, force: true do |t|
+    t.string   "name",       null: false
+    t.string   "gist_id",    null: false
+    t.string   "language"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "neologist_documents", ["gist_id"], name: "index_neologist_documents_on_gist_id"
+  add_index "neologist_documents", ["name", "gist_id"], name: "index_neologist_documents_on_name_and_gist_id", unique: true
+  add_index "neologist_documents", ["name"], name: "index_neologist_documents_on_name"
 
   create_table "neologist_gists", id: false, force: true do |t|
-    t.string   "id",                               null: false
-    t.string   "author_id",                        null: false
-    t.boolean  "public",            default: true, null: false
-    t.integer  "publication_state", default: 0,    null: false
-    t.boolean  "stale",             default: true, null: false
+    t.string   "id",                         null: false
+    t.string   "author_id",                  null: false
+    t.boolean  "public",      default: true, null: false
+    t.text     "description"
+    t.boolean  "stale",       default: true, null: false
     t.datetime "fetched_at"
     t.text     "content"
     t.datetime "compiled_at"

@@ -4,7 +4,7 @@ class CreateNeologistGists < ActiveRecord::Migration
       t.string     :id,                   null: false
       t.string     :author_id,            null: false
       t.boolean    :public,               null: false,  default: true
-      t.integer    :publication_state,    null: false,  default: 0
+      t.text       :description
       t.boolean    :stale,                null: false,  default: true
       t.timestamp  :fetched_at
       t.text       :content
